@@ -440,27 +440,43 @@ footer{
   .hero-right h1{font-size:64px}
   .society{grid-template-columns:1fr}
 }
-/* ================= MOBILE VIEW FIX ================= */
-@media (max-width: 600px){
+/* ================= FIX HERO MOBILE REAL ================= */
+@media (max-width: 768px){
 
   header{
-    padding:14px 6%;
-  }
-
-  nav a{
-    margin-left:14px;
-    font-size:12px;
+    position:relative;
   }
 
   .hero{
     height:auto;
-    padding-top:120px;
-    grid-template-columns:1fr;
+    min-height:100vh;
+    padding:40px 6% 60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:24px;
+  }
+
+  .hero-left{
+    display:flex;
+    justify-content:center;
+  }
+
+  .hero-left img{
+    width:70%;
+    max-width:260px;
+    margin:0 auto;
+  }
+
+  .hero-right{
+    align-items:center;
+    text-align:center;
   }
 
   .hero-right h1{
-    font-size:42px;
-    text-align:center;
+    font-size:40px;
+    line-height:1.2;
+    margin-top:10px;
   }
 
   .hero-right span{
@@ -469,50 +485,13 @@ footer{
   }
 
   .hero-right i{
-    text-align:center;
     font-size:14px;
+    margin-top:12px;
   }
 
-  section{
-    padding:60px 6%;
-  }
-
-  h2{
-    font-size:28px;
-  }
-
-  p{
-    font-size:14px;
-  }
-
-  .gallery{
-    grid-template-columns:1fr;
-    gap:18px;
-  }
-
-  .card{
-    height:200px;
-  }
-
-  .tiket-box,
-  .galeri-box{
+  .tiket-box{
+    margin-top:18px;
     width:100%;
-  }
-
-  .btn-tiket,
-  .btn-galeri{
-    width:100%;
-    display:block;
-  }
-
-  .team-grid{
-    grid-template-columns:1fr;
-    gap:24px;
-  }
-
-  footer{
-    font-size:12px;
-    padding:60px 6%;
   }
 }
 
